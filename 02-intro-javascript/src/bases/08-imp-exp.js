@@ -1,8 +1,9 @@
 // import {heroes} from "./data/heroes";
 // import {heroes} from "./data/heroes";
-import heroes, {owners} from "../data/heroes";
+// import heroes, {owners} from "../data/heroes";
+import heroes from "../data/heroes";
 
-console.log(owners);
+// console.log(owners);
 
 // const getHeroesById = (id) => {
 //    return heroes.find((heroe) => {
@@ -18,11 +19,11 @@ console.log(owners);
 //    return heroes.find((heroe) => heroe.id === id);
 // };
 
-const getHeroesById = (id) => heroes.find((heroe) => heroe.id === id);
+export const getHeroesById = (id) => heroes.find((heroe) => heroe.id === id);
 
-console.log(getHeroesById(2));
+// console.log(getHeroesById(2));
 
-const getHeroesByOwner = (owner) =>
+export const getHeroesByOwner = (owner) =>
    heroes.filter((heroe) => heroe.owner === owner);
 
-console.log(getHeroesByOwner("Marvel"));
+// console.log(getHeroesByOwner("Marvel"));

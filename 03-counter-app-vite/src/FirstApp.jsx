@@ -1,20 +1,10 @@
-const newMesage = {
-  message: "Hola Mundo",
-  name: "Itzel",
-  age: 22,
-  nickname: "itzramn",
-};
-
-const getMessage = () => {
-  return newMesage.message;
-};
-
-export const FirstApp = () => {
+export const FirstApp = ({title, subTitle}) => {
+  // console.log(props);
   return (
     <>
-      <h1>Itzel</h1>
+      <h1>{title}</h1>
       {/* <code>{JSON.stringify(newMesage)}</code> */}
-      <p>Soy un subtitulo</p>
+      <p>{subTitle + 1}</p>
     </>
   );
 };
